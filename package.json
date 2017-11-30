@@ -1,0 +1,19 @@
+{
+  "name": "nodejsweather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GoldenFlash/weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoldenFlash/weather/issues"
+  },
+  "homepage": "https://github.com/GoldenFlash/weather#readme"
+}

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GoldenFlash/weather/issues"
   },
-  "homepage": "https://github.com/GoldenFlash/weather#readme"
+  "homepage": "https://github.com/GoldenFlash/weather#readme",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
 }

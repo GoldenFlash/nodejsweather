@@ -2,18 +2,17 @@
 var axios = require('axios');
 var data={
 		params:{
-			city:process.argv[2]
+			cityname:process.argv[2]
 		}
 	}
-axios.get('http://api.jirengu.com/weather.php',data).then((res)=>{
-	if(res.data.status==0){
-		console.log(res.data.date)
-		console.log(res.data.results[0].currentCity)
-		console.log(res.data.results[0].weather_data[0].date)
-		console.log(res.data.results[0].weather_data[0].weather)
-		console.log(res.data.results[0].weather_data[0].wind)
-		console.log(res.data.results[0].weather_data[0].temperature)
-	}else{
-		console.log('城市名有误')
+
+axios.get('http://v.juhe.cn/weather/index?format=2&key=559cd04c55bb224e129bb05ffec76ac4',data).then((res)=>{
+	if(res.data.resultcode ==200){
+		console.log(res.data.result.today.city)
+		console.log(res.data.result.today.date_y+res.data.result.today.week)
+		console.log(res.data.result.today.temperature)
+		console.log(res.data.result.today.weather)
+		console.log(res.data.result.today.wind)
 	}
+		
 })
